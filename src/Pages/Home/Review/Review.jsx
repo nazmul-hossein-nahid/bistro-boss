@@ -17,12 +17,11 @@ import { FaQuoteLeft } from "react-icons/fa";
 const Review = () => {
   const [reviews, setReviews] = useState([]);
   useEffect(() => {
-    fetch("reviews.json")
+    fetch("http://localhost:5000/api/v1/reviews")
       .then((res) => res.json())
       .then((data) => setReviews(data));
   }, []);
 
-  console.log(reviews);
   return (
     <section className="my-20">
       <Sectiontitle

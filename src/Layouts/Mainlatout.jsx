@@ -5,8 +5,10 @@ import Footer from "../Components/Footer/Footer";
 const Mainlatout = () => {
   return (
     <>
-     <Navbar></Navbar>
-      <Outlet></Outlet>
+      <Navbar></Navbar>
+      <section className="min-h-[50vh]">
+        <Outlet></Outlet>
+      </section>
       <Footer></Footer>
     </>
   );
